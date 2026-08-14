@@ -21,6 +21,8 @@ int main(){
         
     }
 }
+
+
 // using two pointer approach
 #include<iostream>
 using namespace std;
@@ -42,5 +44,31 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
         
+    }
+}
+
+
+
+// palindrome number using recrusion
+#include <iostream>
+using namespace std;
+int palindrome(int i,string s)
+{
+    if(i<s.size()/2){
+        if(s[i]!=s[s.size()-i-1]){
+            return false;
+        }
+        return palindrome(i+1,s);
+    }
+    return true;
+}
+int main(){
+    string s;
+    cin>>s;
+    if(palindrome(0,s)){
+        cout<<"palindrome";
+    }
+    else{
+        cout<<"not palindrome";
     }
 }
