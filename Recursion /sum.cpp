@@ -2,7 +2,7 @@
 //functtinal call
 #include<iostream>
 using namespace std;
-/*int sum(int n){
+int sum(int n){
     if(n==0){
         return 0;
 
@@ -30,7 +30,17 @@ return sum(i-1,sum+1);
 }
 int sum(int n){
     return sum(n,0);
-}*/
+}
+
+
+
+
+
+
+
+
+
+
 
 //factorial of n numbersss
 int fact(int n){

@@ -1,4 +1,4 @@
-/*#include<iostream>
+#include<iostream>
 using namespace std;
 void solve(int n, int source,int des,int aux){
     if(n==0){
@@ -15,7 +15,7 @@ int main(){
     cin>>n;
     solve(n,1,3,2);
     return 0;
-}*/
+}
 
 
 
